@@ -1,15 +1,10 @@
-import com.dao.zang.ReverseWord;
-import com.dao.zang.RobotRoute;
-import com.dao.zang.Solution;
-import jdk.nashorn.internal.runtime.NumberToString;
-
 import java.util.*;
 
 public class Main {
     public static int[] createArr(int[] arr){
         HashMap<Integer,Integer> map = new HashMap<>();
-        for(int i=0;i<arr.length;i++){
-            map.put(arr[i],arr[i]);
+        for (int k : arr) {
+            map.put(k, k);
         }
         for(int i=0;i<arr.length;i++){
             for(int j=i+1;j<arr.length;j++){
@@ -21,9 +16,7 @@ public class Main {
         }
         int[] a =new int[map.size()];
         List<Integer> list = new ArrayList<>();
-        map.forEach((key,value)->{
-          list.add(map.get(key));
-        });
+        map.forEach((key,value)-> list.add(map.get(key)));
         for(int i= 0;i<map.size();i++){
             a[i]=list.get(i);
         }
