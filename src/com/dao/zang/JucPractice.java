@@ -113,6 +113,7 @@ public class JucPractice {
 
         // 5. 输出结果
         // 6. git
+        // 7. resolve
         System.out.println("\n==== 所有任务完成 ====");
         results.forEach(System.out::println);
 
