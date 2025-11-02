@@ -11,7 +11,7 @@ public class GetBookListNumber {
         }
         return set.size();
     }
-    //对不同的树进行排列组合计算
+    //对不同的书进行排列组合计算
     public int getCombineBooksNum(int n){
         int num=0;
         for (int i = 1; i < n+1; i++) {
